@@ -8,7 +8,7 @@ const Products = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/products')
+    axios.get('https://quickpick-backend-71975aa50baa.herokuapp.com/api/products')
       .then(res => setProducts(res.data))
       .catch(err => console.error("API Error:", err));
   }, []);
